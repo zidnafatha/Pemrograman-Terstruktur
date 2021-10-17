@@ -70,28 +70,20 @@ elif ( gl == 'D' ):
 if (gl=='A')and(stt=='1'):
     print ('Tunjangan Istri/Suami : Rp',ta)
     print ('Tunjangan Anak        : Rp',tta)
-elif (gl=='A')and(stt=='2'):
-    print ('Tunjangan Istri/Suami : Rp',ta)
-if (gl=='B')and(stt=='1'):
+elif (gl=='B')and(stt=='1'):
     print ('Tunjangan Istri/Suami : Rp',tb)
     print ('Tunjangan Anak        : Rp',ttb)
-elif (gl=='B')and(stt=='2'):
-    print ('Tunjangan Istri/Suami : Rp',tb)
-if (gl=='C')and(stt=='1'):
+elif (gl=='C')and(stt=='1'):
     print ('Tunjangan Istri/Suami : Rp',tc)
     print ('Tunjangan Anak        : Rp',ttc)
-elif (gl=='C')and(stt=='2'):
-    print ('Tunjangan Istri/Suami : Rp',tc)
-if (gl=='D')and(stt=='1'):
+elif (gl=='D')and(stt=='1'):
     print ('Tunjangan Istri/Suami : Rp',td)
     print ('Tunjangan Anak        : Rp',ttd)
-elif (gl=='D')and(stt=='2'):
-    print ('Tunjangan Istri/Suami : Rp',td)
 
 # kasih jeda 1 detik
 time.sleep(1)
 
-print ('----------------------------------- -')
+print ('----------------------------------- +')
 #Potongan
 if (gl == 'A'):
     print ('Potongan(', pa,'%)     : Rp',ppa)
@@ -103,12 +95,20 @@ elif ( gl == 'D' ):
     print ('Potongan(', pd,'%)     : Rp',ppd)
 
 # Gaji Bersih
-print ('----------------------------------- +')
-if (gl == 'A'):
+print ('----------------------------------- -')
+if (gl == 'A') and (stt == '1') :
     print ('Gaji Bersih          : Rp',a+ta+tta-ppa)
-elif ( gl == 'B' ):
+elif (gl == 'A') and (stt == '2'):
+    print ('Gaji Bersih          : Rp',a-ppa)
+if (gl == 'B') and (stt == '1'):
     print ('Gaji Bersih          : Rp',b+tb+ttb-ppb)
-elif ( gl == 'C' ):
+elif (gl == 'B') and (stt == '2'):
+    print ('Gaji Bersih          : Rp',b-ppb)
+if (gl == 'C') and (stt == '1'):
     print ('Gaji Bersih          : Rp',c+tc+ttc-ppc)
-elif ( gl == 'D' ):
+elif (gl == 'C') and (stt == '2'):
+    print ('Gaji Bersih          : Rp',c-ppc)
+if (gl == 'D') and (stt == '1'):
     print ('Gaji Bersih          : Rp',d+td+ttd-ppd)
+elif (gl == 'D') and (stt == '2'):
+    print ('Gaji Bersih          : Rp',d-ppd)
