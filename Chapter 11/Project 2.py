@@ -1,7 +1,7 @@
 from datetime import*
 from dateutil.relativedelta import relativedelta
 
-myfile = open('d:\PinjamBuku.txt', 'w+')
+myfile = open('d:\PinjamBuku.txt', 'a+')
 while True:
     a = input('Masukkan Kode Member : ')
     b = input('Masukkan Nama Member : ')
